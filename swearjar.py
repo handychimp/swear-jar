@@ -33,6 +33,7 @@ import re
 import sys
 import time
 import os
+import sys
 
 from google.cloud import speech
 from google.cloud.speech import enums
@@ -49,6 +50,21 @@ CHUNK = int(RATE / 10)  # 100ms
 
 # Donation Tracker
 donation = 0
+
+#Check OS and set notify for Mac (test if it is same for windows)
+if sys.platform == 'darwin':
+    def notify(title, subtitle, message):
+        t = '-title {!r}'.format(title)
+        s = '-subtitle {!r}'.format(subtitle)
+        m = '-message {!r}'.format(message)
+        os.system('terminal-notifier {}'.format(' '.join([m, t, s])))
+elif sys.platform == 'win32':
+    def notify(title,subtitle,message):
+            toaster = ToastNotifier()
+            toaster.show_toast(title +" " + subtitle, message)
+else:
+    def notify(title,subtitle,message):
+        pass
 
 #set credentials for session
 def explicit():
@@ -155,8 +171,6 @@ def listen_print_loop(responses):
     """
     global donation
 
-    toaster = ToastNotifier()
-
     num_chars_printed = 0
     for response in responses:
         if not response.results:
@@ -197,12 +211,12 @@ def listen_print_loop(responses):
 
             # Exit recognition if any of the transcribed phrases could be
             # one of our keywords.
-            if re.search(r'\b(wank|fuck|shit|wanker|bugger|dick|bastard|bitch|fucking|buggery|fucker|fuckers|buggers|fucks|shits|dicks|wankers|bastards|bitches)\b', transcript, re.I):
+            if re.search(r'\b(poo|fuck|fucking|arse|bollocks|shite|innovation)\b', transcript, re.I):
                 print('Oh you naughty boy! Donating £1 to charity to clean your mouth out.')
                 donation +=1
                 print('Total donations so far: £' + str(donation))
-                toaster.show_toast('Oh you naughty boy! Donating £1 to charity to clean your mouth out.', 'Total donations so far: £'+str(donation))
-            
+                notify('Oh you naughty boy!','Donating £1 to charity','Total donations so far: £' + str(donation))
+
             if re.search(r'\b(exit|quit)\b', transcript, re.I):
                 print('Your filthy language has made £'+str(donation)+' for charity')
                 print('Exiting..')
@@ -223,7 +237,7 @@ def main():
         sample_rate_hertz=RATE,
         language_code=language_code,
         #maxAlternatives=5,
-        speech_contexts=[types.SpeechContext(phrases=["fuck","shit","dick","wanker","bugger","wank","bastard","bitch","fucking","buggery","fucker"],)]
+        speech_contexts=[types.SpeechContext(phrases=["poo", "fuck", "fucking", "arse", "bollocks", "shite", "innovation"],)]
         )
     streaming_config = types.StreamingRecognitionConfig(
         config=config,
