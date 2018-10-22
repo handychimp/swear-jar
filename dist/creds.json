@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "lively-listener-219915",
+  "private_key_id": "004a53f2e5fc1c4c060f0844c0944a5d85c4ce4e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC2SiX8LREzX3Hn\nm9auWtvLas0S9VgJmxF1JLS6/vfwB0+TxQ72A0zBdhxg2dj7/KCXvKACXipX2hXU\nwFm9CgBaRCCh9nn7+SYAFA4oQKlR/S8RQ+HcA8wpl42prlTWvazisnZhaRtB2rRq\noVLBCrrhfOgXVdhjbRfqUEaQE4zVwHqbP4gmwBWo2Jys5B/gwnU+dXBSHmY0OCHG\nmlPGPXboW8th4gUS9wCJkgcs9hUY8KJsl7lPGgGEj9zZIunVhT9MH2Uf+rFHA1+D\nhlav0Ha1taBME9HBMpfCXzGHnB1LyC8GVotU9KfgttbOSo5UpgNZIabKXPPcJ5Lm\n99RUeZWDAgMBAAECggEAJtZ3b1n+vy5Hq2v1emJbT+SqWq6xGiLSvl2ar/igxKAa\nIUar4FhloxZSB4SCiXWSlaGXicmcReluG0z8EZ2u44x+U2ObK8cyhHPBbGwSZyiF\nPa1z0pdwiTAD+7Hr23DAA/C37hshto8tP0atxflORbqCDG660rwsizydPBceO3AR\n29wyKVI7rRJF2RmTYQ2cTBtqLBtxbHvlWR2DFRqQVc7Z88VEzMI7c2URimPd457U\nLLeblSvXaD3tnGD3nbPbl8b6a3cfsvlmO+btdoRDDQvWOiJ9NviA8Y3JqY13KqWE\nrji5mHd9esan71Ib8ixZ6i9/0Kdj6chQ17aUHKlGoQKBgQDdD+7qlm2Tfr1o04aL\nmT9QMRO4Xidjv1RNKlV0Quubkk+xngSvmMwU/+uQAABWNG3IRT0hLx34Hz85Iccu\nVbU2wVnjScRjKUETtdrDdG8TBElody34SxIqS8c9Elp5h0YGxI1LyNLc/FijCANV\nBf8aso/8euOchWw3cMwzTlbsMwKBgQDTGX7RM54U+pp2I3uaD7i6pVviF/rxE7/q\nvVP+wu1ut7px1L8NwOHH/pzcD2XV7gNu9lBgaVTtsPlVvELjxGRepWHbe5OMucM6\nMnM+8Q8KTu8CUJEoU5vMvrA+ZLwnXkO5MX95kk8dl7XYSZYz21fLlMb7JJrdLNDV\nXW4OkPRhcQKBgQCrjHPRpE8AiPgf4xakOpaBerRc/OQAajfXciTChjQklFQ39/KW\n+jJVkYySQQ4B18niAqk/mTrelBESGv5hHK32AfHpihNXCGqyCwvrZe3Uih0VbndE\nGa3NGOVSpW2Epc9X7SvhRcUtLL70NYGwd2jSpQNL4WnEy12BYI12uzKFNQKBgFhU\n38LsJWbD4iQy/sJdd7/p94Oo4yFDUVgJNv9wU2ezy3lcO0GnBxLnkH1omAUnXhpt\nSP6+tIHtPrfIWfjysckEzOjJUdld1bohaCXbOp7mno5KZiMIsTXASQEip7SVdiMk\n+iFFvoM0eyvwxsAWNSuDqqtmCsMnwI63VJkVwJyRAoGAKw5A0nexqfeNGqwiayOC\n5yLBaa3zSSj+wXvmztmwZPY2MCxe905L8XsBo7e5jUO2VCKVtjpbfLi13dIlZDUF\nlAhO8rddHaCvEWaRRMd++XLXp6j6guOWpKIXveugeKUjLk+1j+plzSMvRPYARERL\n9B9BNLSanhYYjrybebI6fyk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "swearjar-user@lively-listener-219915.iam.gserviceaccount.com",
+  "client_id": "103485490372388019559",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/swearjar-user%40lively-listener-219915.iam.gserviceaccount.com"
+}

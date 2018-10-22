@@ -201,7 +201,7 @@ def listen_print_loop(responses):
                 print('Oh you naughty boy! Donating £1 to charity to clean your mouth out.')
                 donation +=1
                 print('Total donations so far: £' + str(donation))
-                toaster.show_toast('Oh you naughty boy! Donating £1 to charity to clean your mouth out.\n \n Total donations so far: £'+donation)
+                toaster.show_toast('Oh you naughty boy! Donating £1 to charity to clean your mouth out.', 'Total donations so far: £'+str(donation))
             
             if re.search(r'\b(exit|quit)\b', transcript, re.I):
                 print('Your filthy language has made £'+str(donation)+' for charity')
@@ -213,7 +213,7 @@ def listen_print_loop(responses):
 def main():
     # See http://g.co/cloud/speech/docs/languages
     # for a list of supported languages.
-    language_code = 'en-US'  # a BCP-47 language tag
+    language_code = 'en-GB'  # a BCP-47 language tag
     key = os.path.join(__file__,'creds.json')
     credentials = service_account.Credentials.from_service_account_file('creds.json')
     
