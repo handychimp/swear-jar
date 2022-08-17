@@ -1,3 +1,7 @@
+A quick and dirty play around with Google voice recognition tools to make a popup appear every time the speaker swears. 
+
+Was going to develop this to total up a bill for the swears during the session, and then allow the user to donate that much to a charity.
+
 Setup:
 
 1. Install Python 3.5 (or above)
